@@ -43,5 +43,9 @@ fun judgeNumber(number: Int) {
 }
 
 fun judgeNumber2(number: Int) {
-
+    return when {
+        number == 0 -> println("주어진 숫자는 0입니다.")
+        number % 2 == 0 -> println("주어진 숫자는 짝수 입니다.")
+        else -> println("주어진 숫자는 홀수 입니다.")
+    }
 }
