@@ -3,7 +3,7 @@ package lec01;
 import org.jetbrains.annotations.Nullable;
 
 public class Person {
-    private String name;
+    private final String name;
     private int age;
 
     @Nullable
@@ -17,6 +17,10 @@ public class Person {
 
     public Person(String name) {
         this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public Person(String name, int age) {
